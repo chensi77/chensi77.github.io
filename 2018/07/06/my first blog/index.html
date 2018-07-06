@@ -5,16 +5,19 @@
   
 
   
-  <title>test_my_site | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="test_my_site">
-<meta property="og:url" content="http://yoursite.com/2018/07/06/test-my-site/index.html">
+  <meta name="description" content="#第一篇博客   暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！   下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧 ##HEXO所遇问题 ###1.SHH连接问题。 ####描述：在检查SHH是否连接成功时，报错 Host key verification failed经检查发现.shh文件夹内缺少known_h">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/07/06/my first blog/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#第一篇博客   暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！   下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧 ##HEXO所遇问题 ###1.SHH连接问题。 ####描述：在检查SHH是否连接成功时，报错 Host key verification failed经检查发现.shh文件夹内缺少known_h">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-06T09:50:52.319Z">
+<meta property="og:updated_time" content="2018-07-06T11:05:02.555Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test_my_site">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#第一篇博客   暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！   下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧 ##HEXO所遇问题 ###1.SHH连接问题。 ####描述：在检查SHH是否连接成功时，报错 Host key verification failed经检查发现.shh文件夹内缺少known_h">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -61,33 +64,38 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-test-my-site" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-my first blog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/07/06/test-my-site/" class="article-date">
-  <time datetime="2018-07-06T09:50:52.000Z" itemprop="datePublished">2018-07-06</time>
+    <a href="/2018/07/06/my first blog/" class="article-date">
+  <time datetime="2018-07-06T11:06:46.199Z" itemprop="datePublished">2018-07-06</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      test_my_site
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>#第一篇博客</p>
+<p>  暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！</p>
+<p>  下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧</p>
+<p>##HEXO所遇问题</p>
+<p>###1.SHH连接问题。</p>
+<p>####描述：在检查SHH是否连接成功时，报错 Host key verification failed<br><br>经检查发现.shh文件夹内缺少known_hosts文件<br></p>
+<p>####解决：输入<code>ssh-keyscan -H github.com &gt;&gt; ~/.ssh/known_hosts</code></p>
+<p>###2.localhost:4000无响应问题</p>
+<p>####描述：在浏览器地址框输入本地浏览地址无响应<br><br>猜测是端口被占用</p>
+<p>####解决：输入<code>hexo s -p 5000</code>更换端口</p>
+<p>###3.部署后使用github.io无法浏览</p>
+<p>####描述：表现为与本地预览的不同，仍未原来默认页面<br>结果发现是站点配置文件语法错误</p>
+<p>####解决：在repo后确定是一个空格</p>
+<p>##接下来要做的</p>
+<p>1.学会在markdown里加入图片，超链接等<br><br>2.继续刷《算法笔记》，提高自己的代码能力<br>3.将自己的感悟和学到的东西写成博客和大家分享！</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/06/test-my-site/" data-id="cjj9tyu7a0001lwuhhn8d0z54" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/06/my first blog/" data-id="cjj9vl8ir0000ccuhvq1i3lc2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -95,15 +103,6 @@
   
     
 <nav id="article-nav">
-  
-    <a href="/2018/07/06/test-my-site-1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          test_my_site
-        
-      </div>
-    </a>
   
   
     <a href="/2018/07/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
@@ -145,11 +144,7 @@
       <ul>
         
           <li>
-            <a href="/2018/07/06/test-my-site-1/">test_my_site</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/06/test-my-site/">test_my_site</a>
+            <a href="/2018/07/06/my first blog/">(no title)</a>
           </li>
         
           <li>
