@@ -5,19 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>第一篇博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#第一篇博客   暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！   下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧 ##HEXO所遇问题 ###1.SHH连接问题。 ####描述：在检查SHH是否连接成功时，报错 Host key verification failed经检查发现.shh文件夹内缺少known_h">
+  <meta name="description" content="暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！   下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧 HEXO所遇问题1.SHH连接问题。描述：在检查SHH是否连接成功时，报错 Host key verification failed经检查发现.shh文件夹内缺少known_hosts文件 解决：输入ssh-ke">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="第一篇博客">
 <meta property="og:url" content="http://yoursite.com/2018/07/06/my first blog/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="#第一篇博客   暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！   下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧 ##HEXO所遇问题 ###1.SHH连接问题。 ####描述：在检查SHH是否连接成功时，报错 Host key verification failed经检查发现.shh文件夹内缺少known_h">
+<meta property="og:description" content="暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！   下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧 HEXO所遇问题1.SHH连接问题。描述：在检查SHH是否连接成功时，报错 Host key verification failed经检查发现.shh文件夹内缺少known_hosts文件 解决：输入ssh-ke">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-06T11:05:02.555Z">
+<meta property="og:updated_time" content="2018-07-06T11:14:14.493Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="#第一篇博客   暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！   下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧 ##HEXO所遇问题 ###1.SHH连接问题。 ####描述：在检查SHH是否连接成功时，报错 Host key verification failed经检查发现.shh文件夹内缺少known_h">
+<meta name="twitter:title" content="第一篇博客">
+<meta name="twitter:description" content="暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！   下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧 HEXO所遇问题1.SHH连接问题。描述：在检查SHH是否连接成功时，报错 Host key verification failed经检查发现.shh文件夹内缺少known_hosts文件 解决：输入ssh-ke">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -74,28 +74,29 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      第一篇博客
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#第一篇博客</p>
-<p>  暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！</p>
+        <p>  暨于7月5日开通了我的github后，钻研了两三个小时终于部署成功了我的个人主页~开心！以后可以走上我的码农之路了！</p>
 <p>  下面写点什么呢？那就先总结一下今天下午部署过程中遇到的问题吧</p>
-<p>##HEXO所遇问题</p>
-<p>###1.SHH连接问题。</p>
-<p>####描述：在检查SHH是否连接成功时，报错 Host key verification failed<br><br>经检查发现.shh文件夹内缺少known_hosts文件<br></p>
-<p>####解决：输入<code>ssh-keyscan -H github.com &gt;&gt; ~/.ssh/known_hosts</code></p>
-<p>###2.localhost:4000无响应问题</p>
-<p>####描述：在浏览器地址框输入本地浏览地址无响应<br><br>猜测是端口被占用</p>
-<p>####解决：输入<code>hexo s -p 5000</code>更换端口</p>
-<p>###3.部署后使用github.io无法浏览</p>
-<p>####描述：表现为与本地预览的不同，仍未原来默认页面<br>结果发现是站点配置文件语法错误</p>
-<p>####解决：在repo后确定是一个空格</p>
-<p>##接下来要做的</p>
-<p>1.学会在markdown里加入图片，超链接等<br><br>2.继续刷《算法笔记》，提高自己的代码能力<br>3.将自己的感悟和学到的东西写成博客和大家分享！</p>
+<h2 id="HEXO所遇问题"><a href="#HEXO所遇问题" class="headerlink" title="HEXO所遇问题"></a>HEXO所遇问题</h2><h3 id="1-SHH连接问题。"><a href="#1-SHH连接问题。" class="headerlink" title="1.SHH连接问题。"></a>1.SHH连接问题。</h3><h4 id="描述：在检查SHH是否连接成功时，报错-Host-key-verification-failed"><a href="#描述：在检查SHH是否连接成功时，报错-Host-key-verification-failed" class="headerlink" title="描述：在检查SHH是否连接成功时，报错 Host key verification failed"></a>描述：在检查SHH是否连接成功时，报错 Host key verification failed<br></h4><p>经检查发现.shh文件夹内缺少known_hosts文件<br></p>
+<h4 id="解决：输入ssh-keyscan-H-github-com-gt-gt-ssh-known-hosts"><a href="#解决：输入ssh-keyscan-H-github-com-gt-gt-ssh-known-hosts" class="headerlink" title="解决：输入ssh-keyscan -H github.com &gt;&gt; ~/.ssh/known_hosts"></a>解决：输入<code>ssh-keyscan -H github.com &gt;&gt; ~/.ssh/known_hosts</code></h4><h3 id="2-localhost-4000无响应问题"><a href="#2-localhost-4000无响应问题" class="headerlink" title="2.localhost:4000无响应问题"></a>2.localhost:4000无响应问题</h3><h4 id="描述：在浏览器地址框输入本地浏览地址无响应"><a href="#描述：在浏览器地址框输入本地浏览地址无响应" class="headerlink" title="描述：在浏览器地址框输入本地浏览地址无响应"></a>描述：在浏览器地址框输入本地浏览地址无响应<br></h4><p>猜测是端口被占用</p>
+<h4 id="解决：输入hexo-s-p-5000更换端口"><a href="#解决：输入hexo-s-p-5000更换端口" class="headerlink" title="解决：输入hexo s -p 5000更换端口"></a>解决：输入<code>hexo s -p 5000</code>更换端口</h4><h3 id="3-部署后使用github-io无法浏览"><a href="#3-部署后使用github-io无法浏览" class="headerlink" title="3.部署后使用github.io无法浏览"></a>3.部署后使用github.io无法浏览</h3><h4 id="描述：表现为与本地预览的不同，仍未原来默认页面"><a href="#描述：表现为与本地预览的不同，仍未原来默认页面" class="headerlink" title="描述：表现为与本地预览的不同，仍未原来默认页面"></a>描述：表现为与本地预览的不同，仍未原来默认页面</h4><p>结果发现是站点配置文件语法错误</p>
+<h4 id="解决：在repo后确定是一个空格"><a href="#解决：在repo后确定是一个空格" class="headerlink" title="解决：在repo后确定是一个空格"></a>解决：在repo后确定是一个空格</h4><h2 id="接下来要做的"><a href="#接下来要做的" class="headerlink" title="接下来要做的"></a>接下来要做的</h2><p>1.学会在markdown里加入图片，超链接等<br><br>2.继续刷《算法笔记》，提高自己的代码能力<br><br>3.将自己的感悟和学到的东西写成博客和大家分享！</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/06/my first blog/" data-id="cjj9vn5xx0001h0uhxu8kitqo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/06/my first blog/" data-id="cjj9vukux00017guh6k6q4yp1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -144,7 +145,7 @@
       <ul>
         
           <li>
-            <a href="/2018/07/06/my first blog/">(no title)</a>
+            <a href="/2018/07/06/my first blog/">第一篇博客</a>
           </li>
         
           <li>
